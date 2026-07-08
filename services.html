@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased text-gray-900 bg-white scroll-smooth scroll-pt-20">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Neosho Security Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore our range of premium security services: CCTV cameras, gate motors, access control, alarms, intercom systems, electric fencing, garage doors, and maintenance in Johannesburg.">
+    <meta name="keywords" content="CCTV installation, gate motors, access control, alarm systems, intercom systems, electric fencing, garage doors, repairs and maintenance, Johannesburg">
+    <meta name="author" content="Neosho Security Solutions">
+    
+    <!-- Open Graph tags for Social Media -->
+    <meta property="og:title" content="Services | Neosho Security Solutions">
+    <meta property="og:description" content="Explore our premium security services: CCTV, gate motors, alarms, access control, electric fencing, and garage doors in Johannesburg & Roodepoort.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neoshosecurity.co.za/services.html">
+    <meta property="og:image" content="assets/images/hero/hero-banner.png">
+    <meta property="og:site_name" content="Neosho Security Solutions">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+  
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('neosho-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+
+  <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/interface-upgrade.css">
+  </head>
+  <body class="min-h-screen selection:bg-gray-200 selection:text-black overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 h-[88px] transition-shadow">
+      <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between relative">
+        <!-- Left: Logo -->
+        <div class="flex items-center z-10">
+          <a href="index.html" class="site-logo-link" aria-label="Neosho Security Solutions homepage">
+            <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="site-logo-img">
+          </a>
+        </div>
+
+        <!-- Center: Desktop Links (Centered in the navbar) -->
+        <div class="hidden lg:flex items-center justify-center gap-6 xl:gap-8 nav-desktop absolute left-1/2 -translate-x-1/2 h-full">
+          <a href="index.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Home
+          </a>
+          <a href="services.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Services
+          </a>
+          <a href="about.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            About Us
+          </a>
+          <a href="gate-promotions.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Gate Promotions
+          </a>
+          <a href="contact.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Contact
+          </a>
+        </div>
+
+        <!-- Right: Desktop display control -->
+
+
+        <div class="hidden lg:flex items-center gap-3 nav-desktop z-10" aria-label="Display settings">
+
+
+        </div>
+
+
+
+        <!-- Mobile: Hamburger -->
+        <button class="flex lg:hidden text-gray-900 p-2 -mr-2 focus:outline-none mobile-menu-button z-10" id="mobile-menu-btn" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6" id="menu-icon" stroke-width="1.5"></i>
+          <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon" stroke-width="1.5"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu flex-col bg-white w-full px-6 pb-8 pt-4 border-t border-gray-100">
+        <div class="flex flex-col gap-6 text-2xl font-medium text-gray-900 mb-auto tracking-tight">
+          <a href="index.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Home
+          </a>
+          <a href="services.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Services
+          </a>
+          <a href="about.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            About Us
+          </a>
+          <a href="gate-promotions.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Gate Promotions
+          </a>
+          <a href="contact.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Contact
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-3 mt-8" aria-label="Display settings">
+
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <header class="max-w-7xl mx-auto px-6 pt-12 pb-8 lg:pt-20 lg:pb-12" id="services-hero">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.05] text-black animate-title mb-6">
+          Premium Security Services
+        </h1>
+        <p class="text-lg lg:text-xl text-gray-500 leading-relaxed font-normal">
+          We offer complete security solutions for residential properties, commercial operations, and estates. From custom installations to reliable repairs and routine maintenance.
+        </p>
+      </div>
+    </header>
+
+    <!-- Services Grid List -->
+    <main class="w-full bg-gray-50/50 py-10 lg:py-20 border-t border-gray-100" id="services-grid-section">
+      <div class="max-w-7xl mx-auto px-6 space-y-16 lg:space-y-20" id="services-grid">
+        
+        <!-- CCTV Installation -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center" id="cctv">
+          <div class="lg:col-span-5 h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own CCTV installation image (recommended: 800x600) -->
+            <img src="assets/images/services/cctv-installation.png" alt="CCTV installation" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Installation & Repairs</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              CCTV Installation
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              High-definition surveillance systems designed to monitor and protect your residential, commercial, or estate property 24/7. Keep an eye on your home or office from anywhere in the world.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>IP, HD-TVI, and Thermal security camera installations</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Remote viewing setup on mobile phones, tablets, and PCs</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Motion detection alerts and custom recording setup</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>NVR/DVR recording configuration with secure backup storage</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=cctv" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gate Motors -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center lg:flex-row-reverse" id="gate-motors">
+          <div class="lg:col-span-5 lg:order-last h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own gate motor image (recommended: 800x600) -->
+            <img src="assets/images/services/gate-motor.png" alt="Gate motor installation" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Automation & Maintenance</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Gate Motors
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Reliable automated gate solutions to secure your property entrance and provide convenient, fast control. We work with standard brands to guarantee performance and reliability.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Centurion, Hansa, and other leading gate motor installations</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>High-speed sliding and heavy swing gate motors</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Safety beam integration to prevent accidental vehicle or pedestrian impact</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Backup battery replacement and mechanical motor repairs</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=gate-motors" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Access Control -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center" id="access-control">
+          <div class="lg:col-span-5 h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own access control image (recommended: 800x600) -->
+            <img src="assets/images/services/access-control.png" alt="Access control system" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Access Management</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Access Control
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Manage who enters your property with advanced, secure access management systems. Ideal for office buildings, residential complexes, estates, and private homes.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Biometric fingerprint and facial recognition scanners</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>RFID keycard and key fob access control hardware</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Secure keypad PIN access systems</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Multi-tenant visitor access databases for estates and complexes</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=access-control" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Alarm Systems -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center lg:flex-row-reverse" id="alarms">
+          <div class="lg:col-span-5 lg:order-last h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own alarm system image (recommended: 800x600) -->
+            <img src="assets/images/services/alarm-system.png" alt="Alarm system" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Intruder Detection</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Alarm Systems
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Intruder detection systems that monitor entry points and alert you of unauthorized access immediately. Protect your premises with the industry's most trusted wireless and wired panels.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Wired and wireless smart alarm systems (Paradox, DSC, IDS)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Outdoor passive infrared (PIR) and indoor motion detector beams</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Mobile app notifications for arming status and active alarm triggers</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>System linkage integration with local armed response networks</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=alarms" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Intercom Systems -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center" id="intercoms">
+          <div class="lg:col-span-5 h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own intercom system image (recommended: 800x600) -->
+            <img src="assets/images/services/intercom.png" alt="Intercom system" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Visitor Screening</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Intercom Systems
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Convenient audio and video visitor screening from your mobile device or indoor monitors. Maintain full control over entry verification before opening gates or doors.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>High-definition video intercom door station integrations</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Wireless GSM intercom installations that dial your phone directly</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Multi-station intercom infrastructure setups for estates and complexes</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Electronic strike lock integration for remote gate/door release</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=intercoms" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Electric Fencing -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center lg:flex-row-reverse" id="electric-fencing">
+          <div class="lg:col-span-5 lg:order-last h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own electric fencing image (recommended: 800x600) -->
+            <img src="assets/images/services/electric-fence.png" alt="Electric fencing" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Perimeter Security</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Electric Fencing
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              High-security electric perimeter fencing that acts as an active physical and psychological deterrent. Secure your boundaries with complete legal compliance and robust monitoring.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Wall-top, freestanding, and custom bracket electric fencing</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Multi-zone security energizers with alarm integration</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Intruder detection trigger setups for wire cuts or short circuits</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Certificate of Compliance (COC) documentation issued on project signoff</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=electric-fencing" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Garage Doors -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center" id="garage-doors">
+          <div class="lg:col-span-5 h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own garage door image (recommended: 800x600) -->
+            <img src="assets/images/services/garage-door.png" alt="Garage door automation" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Garage Automation</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Garage Doors
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Automated garage doors designed for smooth operation, safety, and security. We install premium motors and replace faulty springs or tracks to keep your garage secure.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Roll-up, sectional, and tip-up garage door automated motors</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Heavy-duty motor installation equipped with battery backups</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Obstruction detection safety sensors with automatic reverse</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Garage remote programming and secure automation upgrades</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=garage-doors" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Repairs & Maintenance -->
+        <article class="service-card bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-8 lg:p-10 items-center lg:flex-row-reverse" id="repairs-maintenance">
+          <div class="lg:col-span-5 lg:order-last h-[280px] lg:h-[350px] rounded-xl overflow-hidden bg-black">
+            <!-- Replace this image with your own repairs/maintenance image (recommended: 800x600) -->
+            <img src="assets/images/services/repairs-maintenance.png" alt="Security technician" class="card-image" loading="lazy">
+          </div>
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-gray-100 text-gray-900 text-xs px-3 py-1 rounded-full font-medium">Repairs &amp; Support</span>
+            </div>
+            <h2 class="text-2xl font-medium tracking-tight text-gray-900 mb-4">
+              Repairs &amp; Maintenance
+            </h2>
+            <p class="text-gray-500 leading-relaxed mb-6 font-normal text-sm">
+              Rapid support, diagnostic checks, and professional repairs to keep your security infrastructure active and functional. Prevent systems from failing when you need them most.
+            </p>
+            <ul class="space-y-2 mb-6 text-sm text-gray-600">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Fast diagnosis and fault-finding for all security components and wiring</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Systematic testing and replacement of backup batteries and power supplies</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Realignment of gate beams, camera angles, and fence tensioners</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-black shrink-0" stroke-width="2.5"></i>
+                <span>Custom maintenance contracts for estates, offices, and residential properties</span>
+              </li>
+            </ul>
+            <div class="flex items-center">
+              <a href="contact.html?service=repairs-maintenance" class="text-sm font-semibold text-black hover:text-gray-600 transition-colors inline-flex items-center gap-1.5">
+                Request this service
+                <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Bottom Contact CTA Section -->
+    <section class="max-w-7xl mx-auto px-6 py-14 lg:py-20" id="contact">
+      <div class="bg-black text-white rounded-[2rem] p-8 sm:p-12 lg:p-16 flex flex-col items-center text-center max-w-5xl mx-auto contact-section-container">
+        <h2 class="text-4xl lg:text-5xl font-medium tracking-tight mb-6 leading-tight">
+          Need help choosing the right security solution?
+        </h2>
+        <p class="text-lg text-gray-400 mb-10 max-w-2xl font-normal leading-relaxed">
+          Contact Neosho Security Solutions for a consultation, quote or site assessment.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+          <a href="contact.html" class="bg-white text-black px-8 py-3.5 rounded-full text-base font-medium hover:bg-gray-200 transition-colors duration-300 w-full sm:w-auto text-center shadow-sm">
+            Request a Quote
+          </a>
+          <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener" class="border border-gray-700 px-8 py-3.5 rounded-full text-base font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center gap-2 w-full sm:w-auto text-white">
+            <i data-lucide="message-circle" class="w-5 h-5" stroke-width="1.5"></i>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <a href="index.html" class="footer-logo-link" aria-label="Neosho Security Solutions homepage">
+          <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="footer-logo-img">
+        </a>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+            Premium security installations, repairs and maintenance for residential, commercial and estate properties across Johannesburg.
+          </p>
+        </div>
+        <div class="lg:col-span-2 lg:col-start-6">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Quick Links
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li>
+              <a href="index.html" class="hover:text-black transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-black transition-colors">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-black transition-colors">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="gate-promotions.html" class="hover:text-black transition-colors">
+                Gate Promotions
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-black transition-colors">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li>
+              <a href="services.html#cctv" class="hover:text-black transition-colors">
+                CCTV Installation
+              </a>
+            </li>
+            <li>
+              <a href="services.html#gate-motors" class="hover:text-black transition-colors">
+                Gate Motors
+              </a>
+            </li>
+            <li>
+              <a href="services.html#access-control" class="hover:text-black transition-colors">
+                Access Control
+              </a>
+            </li>
+            <li>
+              <a href="services.html#alarms" class="hover:text-black transition-colors">
+                Alarm Systems
+              </a>
+            </li>
+            <li>
+              <a href="services.html#intercoms" class="hover:text-black transition-colors">
+                Intercom Systems
+              </a>
+            </li>
+            <li>
+              <a href="services.html#electric-fencing" class="hover:text-black transition-colors">
+                Electric Fencing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Contact
+          </h4>
+          <ul class="space-y-4 text-sm text-gray-500 mb-6">
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Phone
+              </span>
+              <a href="tel:+27792724923" class="text-gray-900 font-medium hover:text-gray-600 transition-colors">079 272 4923</a>
+            </li>
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Email
+              </span>
+              <a href="mailto:sales@neoshosecurity.co.za" class="text-gray-900 font-medium hover:text-gray-600 transition-colors">
+                sales@neoshosecurity.co.za
+              </a>
+            </li>
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Location
+              </span>
+              <a href="https://maps.google.com/?q=22%20Mopani%20St,%20Lindhaven,%20Roodepoort,%201724,%20South%20Africa" target="_blank" rel="noopener" class="leading-relaxed text-gray-500 hover:text-black transition-colors">
+                22 Mopani St, Lindhaven
+                <br>
+                Roodepoort, 1724
+              </a>
+            </li>
+          </ul>
+          <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-gray-200 px-6 py-2.5 rounded-md text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors w-full sm:w-auto">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-500 text-center md:text-left">
+          © 2026 Neosho Security Solutions. All rights reserved.
+        </p>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="#" class="hover:text-black transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" class="hover:text-black transition-colors">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased text-gray-900 bg-white scroll-smooth scroll-pt-20">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neosho Security Solutions | CCTV, Gate Motors & Security Installations</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Professional security installations, repairs and maintenance in Johannesburg & Roodepoort. Specialized in CCTV, gate motors, alarm systems, access control, electric fencing and garage doors.">
+  <meta name="keywords"
+    content="security solutions, CCTV installation, gate motors, alarm systems, access control, electric fencing, garage doors, repairs, Johannesburg, Roodepoort">
+  <meta name="author" content="Neosho Security Solutions">
+
+  <!-- Open Graph tags for Social Media -->
+  <meta property="og:title" content="Neosho Security Solutions | CCTV, Gate Motors & Security Installations">
+  <meta property="og:description"
+    content="Professional security installations, repairs and maintenance in Johannesburg & Roodepoort. Contact us for CCTV, gate motors, alarm systems, and access control.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neoshosecurity.co.za/index.html">
+  <meta property="og:image"
+    content="assets/images/hero/hero-banner.png">
+  <meta property="og:site_name" content="Neosho Security Solutions">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('neosho-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/interface-upgrade.css">
+</head>
+
+<body class="min-h-screen selection:bg-gray-200 selection:text-black overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 h-[88px] transition-shadow">
+    <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between relative">
+      <!-- Left: Logo -->
+      <div class="flex items-center z-10">
+        <a href="index.html" class="site-logo-link" aria-label="Neosho Security Solutions homepage">
+            <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="site-logo-img">
+          </a>
+      </div>
+
+      <!-- Center: Desktop Links (Centered in the navbar) -->
+      <div
+        class="hidden lg:flex items-center justify-center gap-6 xl:gap-8 nav-desktop absolute left-1/2 -translate-x-1/2 h-full">
+        <a href="index.html"
+          class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+          Home
+        </a>
+        <a href="services.html"
+          class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+          Services
+        </a>
+        <a href="about.html"
+          class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+          About Us
+        </a>
+        <a href="gate-promotions.html"
+          class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+          Gate Promotions
+        </a>
+        <a href="contact.html"
+          class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+          Contact
+        </a>
+      </div>
+
+      <!-- Right: Desktop display control -->
+      <div class="hidden lg:flex items-center gap-3 nav-desktop z-10" aria-label="Display settings">
+      </div>
+
+      <!-- Mobile: Hamburger -->
+      <button class="flex lg:hidden text-gray-900 p-2 -mr-2 focus:outline-none mobile-menu-button z-10"
+        id="mobile-menu-btn" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6" id="menu-icon" stroke-width="1.5"></i>
+        <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon" stroke-width="1.5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu flex-col bg-white w-full px-6 pb-8 pt-4 border-t border-gray-100">
+      <div class="flex flex-col gap-6 text-2xl font-medium text-gray-900 mb-auto tracking-tight">
+        <a href="index.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+          Home
+        </a>
+        <a href="services.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+          Services
+        </a>
+        <a href="about.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+          About Us
+        </a>
+        <a href="gate-promotions.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+          Gate Promotions
+        </a>
+        <a href="contact.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+          Contact
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-3 mt-8" aria-label="Display settings">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section: Pinned YouTube Scroll Scrub -->
+  <section class="scroll-video-section" aria-label="Neosho scroll controlled security hero video">
+  <header class="scroll-video-hero video-loading" data-youtube-id="fI-W8HJIaSc" data-youtube-start="0" data-youtube-end="24">
+    <div class="scroll-video-bg" aria-hidden="true">
+      <iframe
+        id="scroll-scrub-youtube-frame"
+        class="scroll-video-youtube scroll-video-youtube-frame"
+        title="Neosho Security Solutions scroll scrub video preview"
+        data-youtube-src="https://www.youtube-nocookie.com/embed/fI-W8HJIaSc?autoplay=1&mute=1&controls=0&loop=1&playlist=fI-W8HJIaSc&playsinline=1&rel=0&modestbranding=1&disablekb=1&fs=0&iv_load_policy=3&enablejsapi=1&start=0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        loading="eager"></iframe>
+      <img src="assets/images/hero/hero-banner.png" alt="" class="scroll-video-fallback">
+      <div class="scroll-video-scrim"></div>
+    </div>
+
+    <div class="scroll-video-content">
+      <div class="scroll-video-copy">
+        <p class="scroll-video-kicker">Neosho Security Solutions</p>
+        <h1 class="scroll-video-title">
+          Secure your home, business and property with confidence
+        </h1>
+        <p class="scroll-video-description">
+          Professional CCTV, gate motors, access control, alarm, intercom and electric fencing installations across Johannesburg and surrounding areas.
+        </p>
+
+        <div class="scroll-video-actions">
+          <a href="contact.html" class="scroll-video-primary">
+            Request a Quote
+          </a>
+          <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote."
+            target="_blank" rel="noopener" class="scroll-video-secondary">
+            <i data-lucide="message-circle" class="w-5 h-5" stroke-width="1.5"></i>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-video-steps" aria-label="Security services highlighted while scrolling">
+        <div class="scroll-video-step is-active" data-step="0">
+          <span>01</span>
+          <strong>CCTV visibility</strong>
+          <p>Monitor the areas that matter most.</p>
+        </div>
+        <div class="scroll-video-step" data-step="1">
+          <span>02</span>
+          <strong>Gate automation</strong>
+          <p>Reliable access from the first entry point.</p>
+        </div>
+        <div class="scroll-video-step" data-step="2">
+          <span>03</span>
+          <strong>Access control</strong>
+          <p>Control who enters your home, office or estate.</p>
+        </div>
+        <div class="scroll-video-step" data-step="3">
+          <span>04</span>
+          <strong>Alarm response</strong>
+          <p>Security systems built for confidence.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-video-progress" aria-hidden="true">
+      <span></span>
+    </div>
+
+  </header>
+  </section>
+
+  <!-- Services Section Overview -->
+  <section class="w-full bg-gray-50 py-16 lg:py-24 border-t border-gray-100" id="services-overview">
+    <div class="max-w-7xl mx-auto px-6 mb-12">
+      <h2 class="text-4xl lg:text-5xl font-medium tracking-tight mb-4 text-black animate-title">
+        Core security services
+      </h2>
+      <p class="text-lg text-gray-500 font-normal max-w-2xl leading-relaxed">
+        Professional installations, repairs and maintenance for homes,
+        businesses, estates and commercial properties.
+      </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      <!-- CCTV Installation -->
+      <a href="services.html#cctv" class="group cursor-pointer block" aria-label="View details for CCTV Installation">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/cctv-installation.png"
+            alt="High definition CCTV dome security camera installed on wall"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            CCTV Installation
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          HD, IP &amp; Thermal camera systems
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Installation
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="tool" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Repairs
+          </div>
+        </div>
+      </a>
+
+      <!-- Gate Motors -->
+      <a href="services.html#gate-motors" class="group cursor-pointer block" aria-label="View details for Gate Motors">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/gate-motor.png"
+            alt="Automated entrance gate using electric sliding motor"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Gate Motors
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          Centurion, Hansa &amp; sliding gates
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Installation
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Maintenance
+          </div>
+        </div>
+      </a>
+
+      <!-- Access Control -->
+      <a href="services.html#access-control" class="group cursor-pointer block"
+        aria-label="View details for Access Control">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/access-control.png"
+            alt="Secure biometric fingerprint access scanner installed by office door"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Access Control
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          Biometric, tags &amp; keypad entry
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Setup
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Support
+          </div>
+        </div>
+      </a>
+
+      <!-- Alarm Systems -->
+      <a href="services.html#alarms" class="group cursor-pointer block" aria-label="View details for Alarm Systems">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/alarm-system.png"
+            alt="Smart home alarm panel keypad installed on wall next to main entry door"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Alarm Systems
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          Smart wireless &amp; wired panels
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Installation
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="tool" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Upgrades
+          </div>
+        </div>
+      </a>
+
+      <!-- Intercom Systems -->
+      <a href="services.html#intercoms" class="group cursor-pointer block"
+        aria-label="View details for Intercom Systems">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/intercom.png"
+            alt="Outdoor intercom doorbell system with dynamic video functionality"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Intercom Systems
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          Video &amp; audio entry systems
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Setup
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="tool" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Repairs
+          </div>
+        </div>
+      </a>
+
+      <!-- Electric Fencing -->
+      <a href="services.html#electric-fencing" class="group cursor-pointer block"
+        aria-label="View details for Electric Fencing">
+        <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-5 bg-black">
+          <img
+            src="assets/images/services/electric-fence.png"
+            alt="High voltage electric perimeter fence wires protecting properties"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            loading="lazy">
+        </div>
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="text-lg font-medium tracking-tight text-gray-900">
+            Electric Fencing
+          </h3>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 font-normal">
+          Wall-top, freestanding &amp; COC certificates
+        </p>
+        <div class="flex items-center gap-4 text-xs font-medium text-gray-600 border-t border-gray-100 pt-4">
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Installation
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            Maintenance
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 pt-10">
+      <a href="services.html"
+        class="bg-black text-white px-8 py-3.5 rounded-full text-base font-medium hover:bg-gray-800 transition-colors shadow-sm w-full sm:w-auto text-center">
+        View all services
+      </a>
+      <a href="contact.html?service=site-assessment"
+        class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors flex items-center justify-center gap-2">
+        Request a site assessment
+        <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="w-full bg-white py-16 lg:py-24 border-t border-gray-100" id="how-it-works">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-black mb-4 animate-title">
+        Simple security integration
+      </h2>
+      <p class="text-lg text-gray-500 font-normal max-w-2xl mx-auto leading-relaxed">
+        Our step-by-step process ensures a seamless transition to premium protection.
+      </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8" id="step-cards-grid">
+      <!-- Step 1 -->
+      <div class="step-card bg-gray-50 p-8 rounded-2xl border border-gray-100 flex flex-col items-start">
+        <span class="text-3xl font-bold text-gray-300 mb-4 block">01</span>
+        <h3 class="text-lg font-medium text-gray-900 mb-3">Site Assessment</h3>
+        <p class="text-sm text-gray-500 leading-relaxed font-normal">
+          We visit your property to evaluate potential vulnerability points and understand your layout objectives.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card bg-gray-50 p-8 rounded-2xl border border-gray-100 flex flex-col items-start">
+        <span class="text-3xl font-bold text-gray-300 mb-4 block">02</span>
+        <h3 class="text-lg font-medium text-gray-900 mb-3">Custom System Design</h3>
+        <p class="text-sm text-gray-500 leading-relaxed font-normal">
+          We design a detailed setup featuring hardware recommendations tailored to your budget and needs.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card bg-gray-50 p-8 rounded-2xl border border-gray-100 flex flex-col items-start">
+        <span class="text-3xl font-bold text-gray-300 mb-4 block">03</span>
+        <h3 class="text-lg font-medium text-gray-900 mb-3">Professional Install</h3>
+        <p class="text-sm text-gray-500 leading-relaxed font-normal">
+          Our accredited technicians install, wire, test, and program your entire security infrastructure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Brands Section -->
+  <section class="py-16 lg:py-24 border-t border-gray-100 bg-white" id="trusted-brands">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-black mb-4 animate-title">
+        Trained, accredited and certified installers
+      </h2>
+      <p class="text-lg text-gray-500 font-normal max-w-2xl mx-auto leading-relaxed">
+        We install, maintain and repair trusted security products built for long-term reliability.
+      </p>
+    </div>
+
+    <!-- Brand Marquee Ticker -->
+    <div class="ticker-container" aria-label="Supported security and automation brands">
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <!-- Loop set 1 -->
+          <div class="ticker-item">
+            <img src="assets/images/promotions/centurion.png" alt="Centurion" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/gemini.png" alt="Gemini" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/digidoor.png" alt="Digidoor" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/dace.png" alt="Dace" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/hansa.png" alt="Hansa" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/et-systems.png" alt="E.T. Systems" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <!-- Loop set 2 -->
+          <div class="ticker-item">
+            <img src="assets/images/promotions/centurion.png" alt="Centurion" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/gemini.png" alt="Gemini" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/digidoor.png" alt="Digidoor" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/dace.png" alt="Dace" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/hansa.png" alt="Hansa" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/et-systems.png" alt="E.T. Systems" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <!-- Loop set 3 -->
+          <div class="ticker-item">
+            <img src="assets/images/promotions/centurion.png" alt="Centurion" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/gemini.png" alt="Gemini" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/digidoor.png" alt="Digidoor" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/dace.png" alt="Dace" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/hansa.png" alt="Hansa" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/et-systems.png" alt="E.T. Systems" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <!-- Loop set 4 -->
+          <div class="ticker-item">
+            <img src="assets/images/promotions/centurion.png" alt="Centurion" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/gemini.png" alt="Gemini" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/digidoor.png" alt="Digidoor" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/dace.png" alt="Dace" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/hansa.png" alt="Hansa" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+          <div class="ticker-item">
+            <img src="assets/images/promotions/et-systems.png" alt="E.T. Systems" class="h-9 lg:h-11 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Residential & Commercial Solutions -->
+  <section class="bg-gray-50/50 py-16 lg:py-24 border-t border-gray-100" id="residential-commercial">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-14">
+        <div class="lg:col-span-6">
+          <h2 class="text-4xl lg:text-5xl font-medium tracking-tight leading-tight text-black animate-title">
+            Residential and commercial solutions
+          </h2>
+        </div>
+        <div class="lg:col-span-5 lg:col-start-8">
+          <p class="text-lg text-gray-500 leading-relaxed font-normal">
+            Choose the right level of protection based on how your property is
+            used. We install and maintain systems that support daily security,
+            access control and long-term reliability.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div
+          class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 p-8 sm:p-10 flex flex-col">
+          <div class="flex items-start justify-between gap-6 mb-6">
+            <h3 class="text-2xl font-medium tracking-tight text-gray-900">
+              Residential Security
+            </h3>
+            <div
+              class="w-11 h-11 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+              <i data-lucide="home" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 leading-relaxed font-normal">
+            Protect your home with CCTV, alarms, gate automation, intercoms
+            and electric fencing designed for everyday peace of mind.
+          </p>
+          <a href="contact.html?service=residential"
+            class="mt-7 inline-flex items-center gap-2 text-sm font-medium text-black hover:text-gray-600 transition-colors">
+            Speak to a security specialist
+            <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+          </a>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 p-8 sm:p-10 flex flex-col">
+          <div class="flex items-start justify-between gap-6 mb-6">
+            <h3 class="text-2xl font-medium tracking-tight text-gray-900">
+              Commercial Security
+            </h3>
+            <div
+              class="w-11 h-11 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+              <i data-lucide="building-2" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 leading-relaxed font-normal">
+            Secure your business premises with access control, surveillance,
+            alarms and professional maintenance support.
+          </p>
+          <a href="contact.html?service=commercial"
+            class="mt-7 inline-flex items-center gap-2 text-sm font-medium text-black hover:text-gray-600 transition-colors">
+            Speak to a security specialist
+            <i data-lucide="arrow-right" class="w-4 h-4" stroke-width="1.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Neosho -->
+  <section class="bg-gray-50 py-16 lg:py-24 border-t border-gray-100" id="why-choose">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-black mb-6 animate-title">
+          Why choose Neosho Security Solutions?
+        </h2>
+        <p class="text-lg text-gray-500 font-normal max-w-3xl mx-auto leading-relaxed">
+          Premium workmanship, trusted products and support that keeps your
+          security system reliable over time.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center flex flex-col items-center">
+          <div class="w-12 h-12 bg-gray-50 rounded-full border border-gray-100 flex items-center justify-center mb-5">
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight">
+            Professional installations
+          </h3>
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center flex flex-col items-center">
+          <div class="w-12 h-12 bg-gray-50 rounded-full border border-gray-100 flex items-center justify-center mb-5">
+            <i data-lucide="shield" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight">
+            Trusted security brands
+          </h3>
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center flex flex-col items-center">
+          <div class="w-12 h-12 bg-gray-50 rounded-full border border-gray-100 flex items-center justify-center mb-5">
+            <i data-lucide="wrench" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight">
+            Repairs and maintenance support
+          </h3>
+        </div>
+
+        <div
+          class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center flex flex-col items-center">
+          <div class="w-12 h-12 bg-gray-50 rounded-full border border-gray-100 flex items-center justify-center mb-5">
+            <i data-lucide="briefcase" class="w-5 h-5 text-black" stroke-width="1.5"></i>
+          </div>
+          <h3 class="text-lg font-medium text-gray-900 tracking-tight">
+            Residential and commercial experience
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-gray-50 py-16 lg:py-24 border-t border-gray-100" id="testimonials">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+      <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-black mb-4 animate-title">
+        What our clients say
+      </h2>
+      <p class="text-lg text-gray-500 font-normal max-w-2xl mx-auto leading-relaxed">
+        Trusted by homeowners, businesses and estate managers across Johannesburg.
+      </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 testimonials-grid">
+      <div
+        class="testimonial-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
+        <p class="text-gray-600 leading-relaxed italic mb-6">
+          "Excellent service from Neosho. They repaired our sliding gate motor and installed a new video intercom.
+          Professional, prompt, and very neat work."
+        </p>
+        <div>
+          <span class="block font-medium text-gray-900">David M.</span>
+          <span class="text-xs text-gray-400">Roodepoort Homeowner</span>
+        </div>
+      </div>
+
+      <div
+        class="testimonial-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
+        <p class="text-gray-600 leading-relaxed italic mb-6">
+          "The high-definition CCTV camera system is amazing. We can view our cameras on our phones easily. Excellent
+          backup support when we need help."
+        </p>
+        <div>
+          <span class="block font-medium text-gray-900">Sarah K.</span>
+          <span class="text-xs text-gray-400">Randburg Homeowner</span>
+        </div>
+      </div>
+
+      <div
+        class="testimonial-card bg-white p-8 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
+        <p class="text-gray-600 leading-relaxed italic mb-6">
+          "Neosho handles electric fencing maintenance for our corporate park. Their response time is superb and their
+          technical expertise is unmatched."
+        </p>
+        <div>
+          <span class="block font-medium text-gray-900">Marcus T.</span>
+          <span class="text-xs text-gray-400">Sandton Property Manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Contact CTA Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 lg:py-24" id="contact">
+    <div
+      class="bg-black text-white rounded-[2rem] p-8 sm:p-12 lg:p-16 flex flex-col items-center text-center max-w-5xl mx-auto contact-section-container">
+      <h2 class="text-4xl lg:text-5xl font-medium tracking-tight mb-6 leading-tight">
+        Need help choosing the right security solution?
+      </h2>
+      <p class="text-lg text-gray-400 mb-10 max-w-2xl font-normal leading-relaxed">
+        Contact Neosho Security Solutions for a consultation, quote or site
+        assessment.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+        <a href="contact.html"
+          class="bg-white text-black px-8 py-3.5 rounded-full text-base font-medium hover:bg-gray-200 transition-colors duration-300 w-full sm:w-auto text-center shadow-sm">
+          Request a Quote
+        </a>
+        <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote."
+          target="_blank" rel="noopener"
+          class="border border-gray-700 px-8 py-3.5 rounded-full text-base font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center gap-2 w-full sm:w-auto text-white">
+          <i data-lucide="message-circle" class="w-5 h-5" stroke-width="1.5"></i>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-100 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+      <div class="lg:col-span-4 flex flex-col items-start">
+        <a href="index.html" class="footer-logo-link" aria-label="Neosho Security Solutions homepage">
+          <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="footer-logo-img">
+        </a>
+        <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+          Premium security installations, repairs and maintenance for
+          residential, commercial and estate properties across Johannesburg.
+        </p>
+      </div>
+      <div class="lg:col-span-2 lg:col-start-6">
+        <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+          Quick Links
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-500">
+          <li>
+            <a href="index.html" class="hover:text-black transition-colors">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="services.html" class="hover:text-black transition-colors">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="hover:text-black transition-colors">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="gate-promotions.html" class="hover:text-black transition-colors">
+              Gate Promotions
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-black transition-colors">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+          Services
+        </h4>
+        <ul class="space-y-3 text-sm text-gray-500">
+          <li>
+            <a href="services.html#cctv" class="hover:text-black transition-colors">
+              CCTV Installation
+            </a>
+          </li>
+          <li>
+            <a href="services.html#gate-motors" class="hover:text-black transition-colors">
+              Gate Motors
+            </a>
+          </li>
+          <li>
+            <a href="services.html#access-control" class="hover:text-black transition-colors">
+              Access Control
+            </a>
+          </li>
+          <li>
+            <a href="services.html#alarms" class="hover:text-black transition-colors">
+              Alarm Systems
+            </a>
+          </li>
+          <li>
+            <a href="services.html#intercoms" class="hover:text-black transition-colors">
+              Intercom Systems
+            </a>
+          </li>
+          <li>
+            <a href="services.html#electric-fencing" class="hover:text-black transition-colors">
+              Electric Fencing
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+          Contact
+        </h4>
+        <ul class="space-y-4 text-sm text-gray-500 mb-6">
+          <li class="flex flex-col gap-1">
+            <span class="text-xs text-gray-400 uppercase tracking-wider">
+              Phone
+            </span>
+            <a href="tel:+27792724923" class="text-gray-900 font-medium hover:text-gray-600 transition-colors">079 272
+              4923</a>
+          </li>
+          <li class="flex flex-col gap-1">
+            <span class="text-xs text-gray-400 uppercase tracking-wider">
+              Email
+            </span>
+            <a href="mailto:sales@neoshosecurity.co.za"
+              class="text-gray-900 font-medium hover:text-gray-600 transition-colors">
+              sales@neoshosecurity.co.za
+            </a>
+          </li>
+          <li class="flex flex-col gap-1">
+            <span class="text-xs text-gray-400 uppercase tracking-wider">
+              Location
+            </span>
+            <a href="https://maps.google.com/?q=22%20Mopani%20St,%20Lindhaven,%20Roodepoort,%201724,%20South%20Africa" target="_blank" rel="noopener" class="leading-relaxed text-gray-500 hover:text-black transition-colors">
+              22 Mopani St, Lindhaven
+              <br>
+              Roodepoort, 1724
+            </a>
+          </li>
+        </ul>
+        <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote."
+          target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center gap-2 border border-gray-200 px-6 py-2.5 rounded-md text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors w-full sm:w-auto">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-500 text-center md:text-left">
+        © 2026 Neosho Security Solutions. All rights reserved.
+      </p>
+      <div class="flex items-center gap-6 text-sm text-gray-500">
+        <a href="#" class="hover:text-black transition-colors">
+          Privacy Policy
+        </a>
+        <a href="#" class="hover:text-black transition-colors">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

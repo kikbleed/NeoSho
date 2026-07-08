@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased text-gray-900 bg-white scroll-smooth scroll-pt-20">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Promotions &amp; Automation Solutions | Neosho Security Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get premium gate automation services from Neosho Security Solutions. Specializing in sliding and swing gate motor installations, repairs, garage doors, remote programming and automation upgrades.">
+    <meta name="keywords" content="gate motor installation, gate motor repairs, garage door automation, remote programming, automation upgrades, maintenance support, Johannesburg, Roodepoort">
+    <meta name="author" content="Neosho Security Solutions">
+    
+    <!-- Open Graph tags for Social Media -->
+    <meta property="og:title" content="Gate Promotions | Neosho Security Solutions">
+    <meta property="og:description" content="Explore our premium gate and garage door automation services. Repairs, upgrades, remotes and support in Johannesburg and Roodepoort.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neoshosecurity.co.za/gate-promotions.html">
+    <meta property="og:image" content="assets/images/hero/hero-banner.png">
+    <meta property="og:site_name" content="Neosho Security Solutions">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+  
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('neosho-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+
+  <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/interface-upgrade.css">
+  </head>
+  <body class="min-h-screen selection:bg-gray-200 selection:text-black overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 h-[88px] transition-shadow">
+      <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between relative">
+        <!-- Left: Logo -->
+        <div class="flex items-center z-10">
+          <a href="index.html" class="site-logo-link" aria-label="Neosho Security Solutions homepage">
+            <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="site-logo-img">
+          </a>
+        </div>
+
+        <!-- Center: Desktop Links (Centered in the navbar) -->
+        <div class="hidden lg:flex items-center justify-center gap-6 xl:gap-8 nav-desktop absolute left-1/2 -translate-x-1/2 h-full">
+          <a href="index.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Home
+          </a>
+          <a href="services.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Services
+          </a>
+          <a href="about.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            About Us
+          </a>
+          <a href="gate-promotions.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Gate Promotions
+          </a>
+          <a href="contact.html" class="nav-link font-medium text-xs uppercase tracking-wider text-gray-500 hover:text-black transition-colors relative py-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:transition-all after:duration-300 after:w-0 after:bg-transparent">
+            Contact
+          </a>
+        </div>
+
+        <!-- Right: Desktop display control -->
+
+
+        <div class="hidden lg:flex items-center gap-3 nav-desktop z-10" aria-label="Display settings">
+
+
+        </div>
+
+
+
+        <!-- Mobile: Hamburger -->
+        <button class="flex lg:hidden text-gray-900 p-2 -mr-2 focus:outline-none mobile-menu-button z-10" id="mobile-menu-btn" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6" id="menu-icon" stroke-width="1.5"></i>
+          <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon" stroke-width="1.5"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu flex-col bg-white w-full px-6 pb-8 pt-4 border-t border-gray-100">
+        <div class="flex flex-col gap-6 text-2xl font-medium text-gray-900 mb-auto tracking-tight">
+          <a href="index.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Home
+          </a>
+          <a href="services.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Services
+          </a>
+          <a href="about.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            About Us
+          </a>
+          <a href="gate-promotions.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Gate Promotions
+          </a>
+          <a href="contact.html" class="mobile-link text-gray-500 hover:text-black transition-colors">
+            Contact
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-3 mt-8" aria-label="Display settings">
+
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Promotions Hero Section -->
+    <header class="max-w-7xl mx-auto px-6 pt-12 pb-8 lg:pt-20 lg:pb-12" id="promotions-hero">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.05] text-black animate-title mb-6">
+          Gate automation products, repairs and installations
+        </h1>
+        <p class="text-lg lg:text-xl text-gray-500 leading-relaxed font-normal mb-8">
+          Neosho Security Solutions supplies, installs, repairs and maintains trusted gate motors, garage door motors and access automation systems for homes, complexes, estates and businesses.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html?service=gate-automation" class="bg-black text-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors shadow-sm text-center">
+            Request a Gate Automation Quote
+          </a>
+          <a href="#supported-brands" class="border border-gray-300 text-black bg-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-gray-50 transition-colors text-center">
+            View Supported Brands
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section: Supported gate automation brands -->
+    <main class="w-full bg-gray-50/50 py-10 lg:py-20 border-t border-gray-100" id="supported-brands">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="mb-12">
+          <h2 class="text-3xl lg:text-4xl font-medium tracking-tight text-black mb-4">
+            Supported gate automation brands
+          </h2>
+          <p class="text-lg text-gray-500 font-normal max-w-2xl leading-relaxed">
+            We work with trusted automation brands known for reliability, security and long-term performance.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- Centurion Gate Motors -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/centurion.png" alt="Centurion Gate Motors" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">Centurion Gate Motors</h3>
+              <p class="text-gray-600 text-base leading-relaxed mb-6 font-normal">
+                Centurion gate motors are widely used for residential, commercial and estate gate automation. We assist with installation, repairs, replacements and battery backup support.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      D3 and D5 sliding gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      D5 Evo
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      D10 and heavy-duty gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      A10 swing gate systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Battery backup systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote programming
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      New installations
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Fault finding
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Battery replacement
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote setup
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Automation upgrades
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gemini Gate Automation -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/gemini.png" alt="Gemini Gate Automation" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">Gemini Gate Automation</h3>
+              <p class="text-gray-600 text-base leading-relaxed mb-6 font-normal">
+                Gemini gate automation systems are designed for reliable daily operation and safe gate control. We support Gemini systems for homes, complexes and commercial entrances.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Sliding gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Swing gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Control boards
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote access systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Safety beams
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Installation
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Motor replacement
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Control board support
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Safety testing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Digidoor Garage & Gate Automation -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/digidoor.png" alt="Digidoor Garage &amp; Gate Automation" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">Digidoor Garage &amp; Gate Automation</h3>
+              <p class="text-gray-600 text-base leading-relaxed mb-6 font-normal">
+                Digidoor systems provide convenient automation for garage doors and selected gate applications. We assist with setup, repairs and long-term maintenance.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Garage door motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Gate automation units
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Battery backup systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote controls
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Safety sensors
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Garage motor installation
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Garage motor repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote programming
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Maintenance
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Automation upgrades
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dace Motors -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/dace.png" alt="Dace Motors" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">Dace Motors</h3>
+              <p class="text-gray-650 text-base leading-relaxed mb-6 font-normal">
+                Dace motors are used in gate automation applications where reliability and simple operation are important. We support Dace motor installations, repairs and upgrades.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Sliding gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Swing gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Control electronics
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remotes
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Battery backup systems
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Installation
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Fault finding
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote setup
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Motor replacement
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hansa Gate Motors -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/hansa.png" alt="Hansa Gate Motors" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">Hansa Gate Motors</h3>
+              <p class="text-gray-650 text-base leading-relaxed mb-6 font-normal">
+                Hansa gate motors are used for automatic gate systems in residential and business environments. We assist with Hansa motor installation, repairs and maintenance.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Hansa Deluxe systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Hansa 24V systems
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Swing gate motors
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Sliding gate automation
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote access systems
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Installation
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Battery backup support
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote programming
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      General maintenance
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- E.T. Systems -->
+          <article class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-4 aspect-[4/3] w-full rounded-xl bg-white flex items-center justify-center overflow-hidden border border-gray-100">
+              <img src="assets/images/promotions/et-systems.png" alt="E.T. Systems" class="w-full h-full object-contain p-4" loading="lazy">
+            </div>
+            <div class="lg:col-span-8">
+              <h3 class="text-2xl font-semibold tracking-tight text-gray-900 mb-3">E.T. Systems</h3>
+              <p class="text-gray-650 text-base leading-relaxed mb-6 font-normal">
+                E.T. Systems supplies electronic security and automation equipment used in gate access and security installations. We support selected E.T. gate and access products.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="package" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Products Supported
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Gate automation equipment
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Access control accessories
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Receivers
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Remote controls
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Security automation components
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-1.5">
+                    <i data-lucide="wrench" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+                    Services Offered
+                  </h4>
+                  <ul class="space-y-2 text-sm text-gray-600 font-normal">
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Repairs
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Setup
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Replacement
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Integration support
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                      Maintenance
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional Section: Gate automation services -->
+    <section class="w-full bg-white py-16 lg:py-24 border-t border-gray-100" id="automation-services">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-12">
+          <h2 class="text-3xl lg:text-4xl font-medium tracking-tight text-black mb-4">
+            Gate automation services
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50 flex flex-col items-start">
+            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mb-4">
+              <i data-lucide="wrench" class="w-5 h-5" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">Gate motor installation</h3>
+            <p class="text-sm text-gray-500 leading-relaxed font-normal">
+              Professional installation for sliding and swing gates.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50 flex flex-col items-start">
+            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mb-4">
+              <i data-lucide="tool" class="w-5 h-5" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">Gate motor repairs</h3>
+            <p class="text-sm text-gray-500 leading-relaxed font-normal">
+              Fault finding, motor repairs, control board support and part replacement.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50 flex flex-col items-start">
+            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mb-4">
+              <i data-lucide="key" class="w-5 h-5" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">Remote programming</h3>
+            <p class="text-sm text-gray-500 leading-relaxed font-normal">
+              Remote setup, receiver configuration and access control support.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="p-6 rounded-2xl border border-gray-100 bg-gray-50 flex flex-col items-start">
+            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white mb-4">
+              <i data-lucide="battery-charging" class="w-5 h-5" stroke-width="1.5"></i>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-2">Battery backup</h3>
+            <p class="text-sm text-gray-500 leading-relaxed font-normal">
+              Battery checks, replacements and backup power support for gate motors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Garage door automation -->
+    <section class="w-full bg-gray-50/50 py-16 lg:py-24 border-t border-gray-100" id="garage-automation">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <h2 class="text-3xl lg:text-4xl font-medium tracking-tight text-black mb-4">
+            Garage door automation
+          </h2>
+          <p class="text-lg text-gray-500 leading-relaxed font-normal">
+            We also assist with garage door motors, remote programming, repairs and automation upgrades.
+          </p>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 shadow-sm">
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-6 flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+              Supported Services
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-black/5 flex items-center justify-center text-black mt-0.5 flex-shrink-0">
+                  <i data-lucide="check" class="w-3 h-3" stroke-width="2.5"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-medium text-gray-900 block">Garage door motor installation</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-black/5 flex items-center justify-center text-black mt-0.5 flex-shrink-0">
+                  <i data-lucide="check" class="w-3 h-3" stroke-width="2.5"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-medium text-gray-900 block">Garage door motor repairs</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-black/5 flex items-center justify-center text-black mt-0.5 flex-shrink-0">
+                  <i data-lucide="check" class="w-3 h-3" stroke-width="2.5"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-medium text-gray-900 block">Remote setup</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-black/5 flex items-center justify-center text-black mt-0.5 flex-shrink-0">
+                  <i data-lucide="check" class="w-3 h-3" stroke-width="2.5"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-medium text-gray-900 block">Safety testing</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-black/5 flex items-center justify-center text-black mt-0.5 flex-shrink-0">
+                  <i data-lucide="check" class="w-3 h-3" stroke-width="2.5"></i>
+                </div>
+                <div>
+                  <span class="text-sm font-medium text-gray-900 block">Maintenance support</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Contact CTA Section -->
+    <section class="max-w-7xl mx-auto px-6 py-14 lg:py-20" id="contact">
+      <div class="bg-black text-white rounded-[2rem] p-8 sm:p-12 lg:p-16 flex flex-col items-center text-center max-w-5xl mx-auto contact-section-container">
+        <h2 class="text-4xl lg:text-5xl font-medium tracking-tight mb-6 leading-tight">
+          Need help with your gate motor or garage automation?
+        </h2>
+        <p class="text-lg text-gray-400 mb-8 max-w-2xl font-normal leading-relaxed">
+          Request a quote or book a site assessment with Neosho Security Solutions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center mb-8">
+          <a href="contact.html?service=gate-automation" class="bg-white text-black px-8 py-3.5 rounded-full text-base font-semibold hover:bg-gray-200 transition-colors duration-300 w-full sm:w-auto text-center shadow-sm">
+            Request a Gate Automation Quote
+          </a>
+        </div>
+        <div class="w-full pt-8 border-t border-gray-800 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-gray-400">
+          <div class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-white" stroke-width="1.5"></i>
+            <span>Phone: <a href="tel:+27792724923" class="text-white hover:text-gray-300 transition-colors">079 272 4923</a></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-white" stroke-width="1.5"></i>
+            <span>Email: <a href="mailto:sales@neoshosecurity.co.za" class="text-white hover:text-gray-300 transition-colors">sales@neoshosecurity.co.za</a></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-white" stroke-width="1.5"></i>
+            <span>Service Area: Johannesburg / Roodepoort and surrounding areas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-10">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+        <div class="lg:col-span-4 flex flex-col items-start">
+          <a href="index.html" class="footer-logo-link" aria-label="Neosho Security Solutions homepage">
+          <img src="assets/images/neosho-logo.png" alt="Neosho Security Solutions" class="footer-logo-img">
+        </a>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+            Premium security installations, repairs and maintenance for residential, commercial and estate properties across Johannesburg.
+          </p>
+        </div>
+        <div class="lg:col-span-2 lg:col-start-6">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Quick Links
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li>
+              <a href="index.html" class="hover:text-black transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="hover:text-black transition-colors">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-black transition-colors">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="gate-promotions.html" class="hover:text-black transition-colors">
+                Gate Promotions
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-black transition-colors">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li>
+              <a href="services.html#cctv" class="hover:text-black transition-colors">
+                CCTV Installation
+              </a>
+            </li>
+            <li>
+              <a href="services.html#gate-motors" class="hover:text-black transition-colors">
+                Gate Motors
+              </a>
+            </li>
+            <li>
+              <a href="services.html#access-control" class="hover:text-black transition-colors">
+                Access Control
+              </a>
+            </li>
+            <li>
+              <a href="services.html#alarms" class="hover:text-black transition-colors">
+                Alarm Systems
+              </a>
+            </li>
+            <li>
+              <a href="services.html#intercoms" class="hover:text-black transition-colors">
+                Intercom Systems
+              </a>
+            </li>
+            <li>
+              <a href="services.html#electric-fencing" class="hover:text-black transition-colors">
+                Electric Fencing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-semibold tracking-wider text-black uppercase mb-5">
+            Contact
+          </h4>
+          <ul class="space-y-4 text-sm text-gray-500 mb-6">
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Phone
+              </span>
+              <a href="tel:+27792724923" class="text-gray-900 font-medium hover:text-gray-600 transition-colors">079 272 4923</a>
+            </li>
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Email
+              </span>
+              <a href="mailto:sales@neoshosecurity.co.za" class="text-gray-900 font-medium hover:text-gray-600 transition-colors">
+                sales@neoshosecurity.co.za
+              </a>
+            </li>
+            <li class="flex flex-col gap-1">
+              <span class="text-xs text-gray-400 uppercase tracking-wider">
+                Location
+              </span>
+              <a href="https://maps.google.com/?q=22%20Mopani%20St,%20Lindhaven,%20Roodepoort,%201724,%20South%20Africa" target="_blank" rel="noopener" class="leading-relaxed text-gray-500 hover:text-black transition-colors">
+                22 Mopani St, Lindhaven
+                <br>
+                Roodepoort, 1724
+              </a>
+            </li>
+          </ul>
+          <a href="https://wa.me/27792724923?text=Hi%20Neosho%20Security%20Solutions%2C%20I%20would%20like%20to%20request%20a%20quote." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-gray-200 px-6 py-2.5 rounded-md text-sm font-medium text-gray-900 hover:bg-gray-50 transition-colors w-full sm:w-auto">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-500 text-center md:text-left">
+          © 2026 Neosho Security Solutions. All rights reserved.
+        </p>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="#" class="hover:text-black transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" class="hover:text-black transition-colors">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JavaScript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
