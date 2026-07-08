@@ -1,0 +1,164 @@
+/* Neosho Security Solutions - Shared CSS Stylesheet */
+
+/* Google Fonts Import: Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+/* Utility class for GSAP text reveal setup */
+.reveal-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.1em; /* Prevent clipping of descenders */
+  margin-bottom: -0.1em;
+}
+.reveal-word-inner {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Navigation layout responsive rules */
+@media (min-width: 1024px) {
+  .nav-desktop {
+    display: flex !important;
+  }
+  .mobile-menu-button {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 1023px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .mobile-menu-button {
+    display: flex !important;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu.open {
+    display: flex !important;
+  }
+}
+
+/* Focus outline styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+}
+
+/* Custom CSS helper to ensure sticky header works perfectly and doesn't cut content */
+.scroll-pt-20 {
+  scroll-padding-top: 5rem; /* 80px */
+}
+
+/* Brand Ticker / Marquee Styles */
+.ticker-container {
+  overflow: hidden;
+  background-color: #ffffff;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+  width: 100%;
+}
+.ticker-wrap {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 1.75rem 0;
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+.ticker-item {
+  flex-shrink: 0;
+  padding: 0 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #d1d5db; /* Light grey (text-gray-300) */
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== Image Placeholder & Replacement Classes ===== */
+
+/* Base image placeholder class - ensures consistent rendering */
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #f3f4f6;
+}
+
+/* Card images used in service grids and promotion cards */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #000000;
+  transition: transform 0.7s ease-out;
+}
+
+/* Hero section image */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #f3f4f6;
+}
+
+/* Section-level images (about page, etc) */
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+}
+
