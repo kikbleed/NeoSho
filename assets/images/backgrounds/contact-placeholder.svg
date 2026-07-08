@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f3f4f6"/>
+  <rect x="1" y="1" width="1198" height="798" fill="none" stroke="#e5e7eb" stroke-width="2" rx="12"/>
+  <g transform="translate(600, 360)" text-anchor="middle">
+    <rect x="-24" y="-24" width="48" height="48" rx="24" fill="#e5e7eb"/>
+    <path d="M-8,-6 L8,-6 L8,6 L-8,6 Z M-5,-3 L-1,1 L2,-1 L5,3 L5,5 L-5,5 Z M-3,-3 A1.5,1.5 0 1,0 0,-3 A1.5,1.5 0 1,0 -3,-3" fill="#9ca3af" transform="scale(1.1)"/>
+    <text y="48" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" fill="#6b7280" font-weight="500">Replace with Contact Background</text>
+    <text y="74" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="13" fill="#9ca3af">Recommended: 1200 × 800 px</text>
+    <text y="96" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11" fill="#d1d5db">contact-placeholder.jpg</text>
+  </g>
+</svg>
